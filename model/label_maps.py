@@ -1,0 +1,30 @@
+NER_TAGS = [
+    'B-ACCOUNTNAME',
+    'B-ACCOUNTNUMBER',
+    'B-CREDITCARDNUMBER',
+    'B-EMAIL',
+    'B-IP',
+    'B-IPV4',
+    'B-IPV6',
+    'B-MAC',
+    'B-PASSWORD',
+    'B-PHONE_NUMBER',
+    'B-SSN',
+    'B-USERNAME',
+    'I-ACCOUNTNAME',
+    'I-ACCOUNTNUMBER',
+    'I-CREDITCARDNUMBER',
+    'I-EMAIL',
+    'I-IP',
+    'I-IPV4',
+    'I-IPV6',
+    'I-MAC',
+    'I-PASSWORD',
+    'I-PHONE_NUMBER',
+    'I-SSN',
+    'I-USERNAME',
+    'O',
+]
+
+NER_TAG_TO_INDEX = {tag: idx for idx, tag in enumerate(NER_TAGS)}
+INDEX_TO_NER_TAG = {idx: tag for tag, idx in NER_TAG_TO_INDEX.items()}
