@@ -1,10 +1,4 @@
 from sklearn.base import defaultdict
-import nltk
-nltk.download('punkt')
-import spacy
-nlp = spacy.load("en_core_web_sm")
-from nltk.stem import PorterStemmer
-
 
 
 def threshold_data(sequences, threshold):
@@ -19,16 +13,5 @@ def threshold_data(sequences, threshold):
         unk_sequences.append(unk_sequence)
 
     return unk_sequences
-
-def preprocessing(sentence):
-    tokens =nltk.word_tokenize(sentence)
-    # doc = nlp(sentence)
-    # tokens = [token.text for token in doc if not token.is_punct]
-    # print(tokens)
-    stemmer = PorterStemmer()
-    stems = [stemmer.stem(token) for token in tokens]
-    # print(stems)
-
-    return stems
 
 
