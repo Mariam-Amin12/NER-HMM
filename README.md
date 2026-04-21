@@ -1,28 +1,29 @@
 # NER-HMM
 
-A simple Named Entity Recognition (NER) project using a Hidden Markov Model (HMM) and the Viterbi algorithm.
+A simple PII detection project using a Hidden Markov Model (HMM) and the Viterbi algorithm.
 
 ## What This Project Does
 
-- Trains an HMM on tokenized text and NER tags.
+- Trains an HMM on tokenized text and PII tags.
 - Computes:
   - start probabilities
   - transition probabilities
   - emission probabilities
 - Predicts the best tag sequence for a sentence using Viterbi decoding.
+- Detects sensitive entities such as email, phone number, password, SSN, IP, MAC, username, and account-related values.
 
 ## Project Structure
 
 - `itegrate.ipynb`: main notebook for data loading, training, evaluation, and plots.
 - `data/data.csv`: dataset used in the notebook.
 - `model/HMM.py`: HMM class (training + inference wrapper).
-- `model/label_maps.py`: NER label list and index mappings.
+- `model/label_maps.py`: PII label list and index mappings.
 - `model/preprocessing.py`: preprocessing helper (`UNK` thresholding).
 - `components/start_prob.py`: start probability calculation.
 - `components/transition_prob.py`: transition matrix calculation.
 - `components/emission_prob.py`: emission matrix calculation.
 - `components/viterbi.py`: Viterbi decoding implementation.
-- `ner_tags.txt`: list of supported NER tags.
+- `ner_tags.txt`: list of supported PII tags.
 
 ## Requirements
 
