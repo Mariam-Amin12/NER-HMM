@@ -52,7 +52,7 @@ NER_TAG_TO_INDEX = {
     'I-SSN': 22,
     'I-USERNAME': 23,
     'O': 24,
-    'UNK': 25,  # Adding UNK for unknown tokens
+    'UNK': 25, 
 }
 INDEX_TO_NER_TAG = {
     0: 'B-ACCOUNTNAME',
@@ -80,5 +80,5 @@ INDEX_TO_NER_TAG = {
     22: 'I-SSN',
     23: 'I-USERNAME',
     24: 'O',
-    25: 'UNK',  # Adding UNK for unknown tokens
+    25: 'UNK',  
 }

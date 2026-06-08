@@ -1,8 +1,8 @@
-from components.viterbi import viterbi
+from viterbi import viterbi
 
-from components.start_prob import find_start_probabilities
-from components.transition_prob import find_transition_probabilities
-from components.emission_prob import find_emission_probabilities
+from start_prob import find_start_probabilities
+from transition_prob import find_transition_probabilities
+from emission_prob import find_emission_probabilities
 
 class HMM:
     def __init__(self, states, vocab_to_index):

@@ -1,8 +1,8 @@
 import numpy as np
 from pydash import lt
-from components.start_prob import find_start_probabilities
-from components.emission_prob import find_emission_probabilities
-from components.transition_prob import find_transition_probabilities
+from start_prob import find_start_probabilities
+from emission_prob import find_emission_probabilities
+from transition_prob import find_transition_probabilities
 
 def viterbi(observations, states, start_probabilities, transition_probabilities, emission_probabilities):
     num_states = len(states)

@@ -1,0 +1,6 @@
+README.md
+pyproject.toml
+src/NER_HMM.egg-info/PKG-INFO
+src/NER_HMM.egg-info/SOURCES.txt
+src/NER_HMM.egg-info/dependency_links.txt
+src/NER_HMM.egg-info/top_level.txt
